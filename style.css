@@ -1,0 +1,84 @@
+@import url('https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+}
+body{
+   background-color: #191924; 
+   height: 100vh; /*faz com que a sessao do site oculpe a tela inteira*/
+   font-family: Lato;
+   
+}
+header{
+    background-color: #1e1e2c;
+    display: flex; /*deixar os elementos um ao lado do outro*/
+    justify-content: space-between;
+    align-items: center; /*alinha os itens na vertical*/
+    gap: 1rem;
+    flex-wrap: wrap; /*faz com que a pagina/sessao se adapte ao tamanho da janela*/
+    padding: .8rem;
+    min-height: 45px;
+    border-radius: 60px;
+    margin: 35px auto 35px auto; /* top | right | bottom | left */
+    max-width: 2700px;
+    box-shadow: 0 7px 19px rgba(255, 255, 255, 0.12);
+}
+.box-img-header{
+    padding-left: 30px;
+    height: 100%;   
+}
+.img-header{
+    height: 100%;
+    max-width: 100px;
+    
+}
+nav{
+    padding-right: 30px;
+    align-items: center;
+    display: flex;
+    gap: 5rem; /*da um espaço entre os itens*/
+    font-size: 35px;
+    flex-wrap: wrap;
+}
+.nav-links{
+    text-decoration: none; /*tirar o sublinhado dos itens*/
+    color: rgb(133, 218, 192);
+    flex-wrap: wrap;
+}
+.nav-links:hover{
+    color: rgb(56, 90, 80);
+}
+.nav-btn-actions{
+    display: flex;
+    gap: 1rem;
+    
+}
+button{
+    padding: .7rem;
+    font-size: 25px;
+    color: rgb(0, 0, 0);
+    border-radius: 50px;
+    cursor:pointer;
+}
+main{
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+}
+section{
+    padding: 5rem;
+    font-style: lato;
+    color: white;
+}
+strong{
+    color: rgb(133, 218, 192);
+}
+.first-section{
+    font-size: 30px;
+    flex-wrap: wrap;
+    display: flex;
+    gap: 15rem;
+    align-items: center;
+    min-height: 1035px;
+    
+}
