@@ -9,12 +9,15 @@ body{
    font-family: Lato;
    
 }
+.title{
+    color: rgb(133, 218, 192);
+}
 header{
     background-color: #1e1e2c;
     display: flex; /*deixar os elementos um ao lado do outro*/
-    justify-content: space-between;
+    justify-content: flex-start;
     align-items: center; /*alinha os itens na vertical*/
-    gap: 1rem;
+    gap: 870px;
     flex-wrap: wrap; /*faz com que a pagina/sessao se adapte ao tamanho da janela*/
     padding: .8rem;
     min-height: 45px;
@@ -70,15 +73,92 @@ section{
     font-style: lato;
     color: white;
 }
-strong{
-    color: rgb(133, 218, 192);
+
+.main-img{
+    border-radius: 50%;
 }
 .first-section{
-    font-size: 30px;
     flex-wrap: wrap;
     display: flex;
     gap: 15rem;
     align-items: center;
-    min-height: 1035px;
-    
+    min-height: 1035px;    
 }
+.first-section > div{
+    font-size: 30px;
+    min-width: 300px;
+}
+.second-section{
+    flex-wrap: wrap;
+    flex-direction: column;
+    justify-content: center;
+    display: flex;
+    gap: 4rem;
+    align-items: center;
+    min-height: 350px;
+    margin: 40px;
+    font-size: 35px;
+}
+ul{
+    letter-spacing: 2px;
+    gap: 8rem;
+    display: flex;
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+.title{
+    margin-bottom: 20px;
+}
+.third-section{ /*seção completa*/
+    min-height: 1035px;
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    gap: 80px;
+    font-size: 22px;
+    margin: 35px auto 35px auto; /* top | right | bottom | left */
+}
+.third-section > div{ /*texto*/
+    flex-direction: column;
+    max-width: 800px;
+    line-height: 1.5;
+}
+.quem-sou-eu { /*imagem*/
+    border-radius: 50%;
+}
+footer {
+    background-color: #141a33; 
+    color: #ffffff;
+    padding: 40px 0;
+    text-align: center;
+    font-size: 25px;
+    background-color: #00000021;
+    padding: 5rem;
+    gap: 2rem;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+footer .title {
+    font-size: 45px;
+    margin-bottom: 40px;
+}
+
+footer .icones {
+    display: flex;
+    justify-content: center;
+    gap: 45px; /* espaçamento entre ícones */
+    margin-top: 10px;
+}
+
+footer a svg {
+    transition: transform 0.2s ease, opacity 0.2s ease;
+}
+
+footer a:hover svg {
+    transform: scale(1.15); /* leve zoom ao passar o mouse */
+    opacity: 0.8;
+}
+
+
