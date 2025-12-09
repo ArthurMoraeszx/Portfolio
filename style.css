@@ -97,7 +97,7 @@ section{
     align-items: center;
     min-height: 350px;
     margin: 40px;
-    font-size: 35px;
+    font-size: 30px;
 }
 ul{
     letter-spacing: 2px;
@@ -161,4 +161,27 @@ footer a:hover svg {
     opacity: 0.8;
 }
 
+#minha-lista-de-projetos{
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+    font-size: 25px;
+    min-height: 450px;
 
+}
+#minha-lista-de-projetos a{
+    text-decoration: none;
+    color: grey;
+}
+#minha-lista-de-projetos a:hover {
+    color: white;
+    transform: scale(1.5); /* leve zoom ao passar o mouse */
+    opacity: 0.8;
+}
+
+.title-projetos{
+    text-align: center;
+    margin-bottom: 30px;
+    color: rgb(133, 218, 192);
+    font-size: 35px;
+}
